@@ -39,18 +39,27 @@ if RENDER_EXTERNAL_HOSTNAME: ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
 
 # Application definition
-
-INSTALLED_APPS = [
+BASE_APPS = [    
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
-    "Apps.Auth",
-    "corsheaders",
 ]
+LOCAL_APPS = [
+    "Apps.Auth",
+
+]
+
+THIRDS_APPS = [
+    'rest_framework',
+    'corsheaders',
+
+]
+
+INSTALLED_APPS = BASE_APPS+LOCAL_APPS+THIRDS_APPS
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
