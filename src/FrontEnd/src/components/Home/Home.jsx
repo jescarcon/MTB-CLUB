@@ -1,13 +1,13 @@
 import React from 'react';
+import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
 
 function Home() {
     return (
         <div>
-            <h1>Welcome to Our Website!</h1>
-            <p>
-                We're excited to have you here. Explore our features and join our community.
-            </p>
-
+            <Navbar/>
+            <div  style={{ marginBottom: '200px' }}>Aqui ira el contenido de la pagina principal</div>
+            <Footer/>
         </div>
     );
 }
