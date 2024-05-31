@@ -1,5 +1,5 @@
 
-const isProduction = 0;
+const isProduction = 1;
 
 export const ACCESS_TOKEN = "access";
 export const REFRESH_TOKEN = "refresh"
