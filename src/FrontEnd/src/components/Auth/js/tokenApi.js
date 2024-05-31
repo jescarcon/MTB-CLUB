@@ -1,6 +1,6 @@
 import axios from "axios";
-import { ACCESS_TOKEN } from "./constants";
-import { VITE_API_URL } from "./constants";
+import { ACCESS_TOKEN } from "../../Common/constants";
+import { VITE_API_URL } from "../../Common/constants";
 
 const api = axios.create({
   baseURL: VITE_API_URL

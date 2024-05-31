@@ -1,10 +1,10 @@
 import react from "react"
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
-import Login from "./pages/Login"
-import Register from "./pages/Register"
-import Home from "./pages/Home"
-import NotFound from "./pages/NotFound"
-import ProtectedRoute from "./components/ProtectedRoute"
+import Login from "./components/Auth/Login/Login"
+import Register from "./components/Auth/Register/Register"
+import Home from "./components/Home/Home"
+import NotFound from "./components/Common/Error/NotFound"
+import ProtectedRoute from "./components/Common/ProtectedRoute"
 
 function Logout() {
   localStorage.clear()
